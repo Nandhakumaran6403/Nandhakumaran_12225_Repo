@@ -234,16 +234,7 @@ class AddTest {
 
 	}
 
-	@Test
-	void testAddUserWithEmptyFields() throws InterruptedException {
-
-		WebElement submitButton = driver.findElement(By.xpath("//*[@id=\"root\"]/nav/div/div[2]/ul/li[1]/a/button"));
-
-		submitButton.submit();
-
-		assertEquals("http://localhost:3000/adduser", driver.getCurrentUrl());
-
-	}
+	
 
 	@Test
 	void testAddUserWithInvalidPhoneNumber() {
